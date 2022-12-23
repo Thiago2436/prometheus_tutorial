@@ -25,7 +25,7 @@ grafana_api() {
   [[ -n "${params}" ]] && cmd="${cmd} -d \"${params}\""
   [[ -n "${bodyfile}" ]] && cmd="${cmd} --data @${bodyfile}"
   echo "Running ${cmd}"
-  eval ${cmd} || return 1
+  ##eval ${cmd} || return 1
   return 0
 }
 
